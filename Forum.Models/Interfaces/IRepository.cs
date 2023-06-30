@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace Forum.Models.Interfaces
 {
-    internal interface IRepository<T> where T : BaseEntity
+    public interface IRepository<T> where T : BaseEntity
     {
         T GetById(int id);
         IEnumerable<T> List();

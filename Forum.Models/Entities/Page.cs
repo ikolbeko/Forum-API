@@ -1,4 +1,4 @@
-﻿namespace DataModel;
+﻿namespace Forum.Models.Entities;
 
 public class Page<T> where T : class
 {
