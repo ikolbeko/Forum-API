@@ -1,6 +1,4 @@
-﻿using DataModel.Entities;
-
-namespace Forum.Models.Entities;
+﻿namespace Forum.Models.Entities;
 
 public class TopicNode: BaseEntity
 {

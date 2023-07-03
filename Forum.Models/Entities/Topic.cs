@@ -1,4 +1,4 @@
-﻿namespace DataModel.Entities;
+﻿namespace Forum.Models.Entities;
 
 public class Topic : BaseEntity
 {

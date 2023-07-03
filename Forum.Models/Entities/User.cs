@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace DataModel.Entities;
+namespace Forum.Models.Entities;
 
 public class User: IdentityUser
 {

@@ -1,5 +1,4 @@
-﻿using DataModel.Entities;
-using Forum.Models.Entities;
+﻿using Forum.Models.Entities;
 using System.Linq.Expressions;
 
 namespace Forum.Models.Interfaces;
