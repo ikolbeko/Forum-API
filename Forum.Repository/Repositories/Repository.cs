@@ -1,7 +1,6 @@
 ﻿using Forum.Models.Entities;
 using Forum.Models.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using System.Linq.Expressions;
 
 namespace Forum.Repository.Repositories
 {
@@ -34,18 +33,6 @@ namespace Forum.Repository.Repositories
         public virtual T GetById(int id)
         {
             return _dbContext.Set<T>().Find(id);
-        }
-
-        public virtual IEnumerable<T> List()
-        {
-            return _dbContext.Set<T>().AsEnumerable();
-        }
-
-        public virtual IEnumerable<T> List(Expression<Func<T, bool>> predicate)
-        {
-            return _dbContext.Set<T>()
-                   .Where(predicate)
-                   .AsEnumerable();
         }
     }
 }

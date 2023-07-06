@@ -4,7 +4,7 @@ namespace Forum.Models.Entities;
 
 public class User: IdentityUser
 {
-    public string Photo { get; set; }
+    public string Avatar { get; set; }
     public string Email { get; set; }
     public string Url { get; set; }
     public DateTime CreateDate { get; set; }

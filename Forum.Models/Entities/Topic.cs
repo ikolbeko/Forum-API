@@ -1,30 +1,13 @@
-﻿namespace Forum.Models.Entities;
-
-public class Topic : BaseEntity
+﻿namespace Forum.Models.Entities
 {
-    public int NodeId { get; set; }
-    public TopicNode Node { get; set; }
-    public string UserId { get; set; }
-    public User User { get; set; }
-    public string Email { get; set; }
-    public string Title { get; set; }
-    public string Content { get; set; }
-    public int Top { get; set; }
-    public TopicType Type { get; set; }
-    public int ViewCount { get; set; }
-    public int ReplyCount { get; set; }
-    public string LastReplyUserId { get; set; }
-    public User LastReplyUser { get; set; }
-    public DateTime LastReplyTime { get; set; }
-    public DateTime CreateOn { get; set; }
-    public virtual List<TopicReply> Replys { get; set; }
-
-    public enum TopicType
+    public class Topic : BaseEntity
     {
-        Delete = 0,
-        Normal = 1,
-        Top = 2,
-        Good = 3,
-        Hot = 4
+        public string Title { get; set; }
+        public string Content { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public User Author { get; set; }
+        public int ReplyCount { get; set; }
+        public int CategoryId { get; set; }
+        public List<TopicMessage> Messages { get; set; }
     }
 }
