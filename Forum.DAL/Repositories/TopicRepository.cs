@@ -1,7 +1,7 @@
-﻿using Forum.Models.Entities;
-using Forum.Models.Interfaces;
+﻿using Forum.Core.Entities;
+using Forum.Core.Interfaces;
 
-namespace Forum.Repository.Repositories
+namespace Forum.DAL.Repositories
 {
     public class TopicRepository : Repository<Topic>, ITopicRepository
     {
@@ -12,9 +12,9 @@ namespace Forum.Repository.Repositories
             _dbContext = dbContext;
         }
 
-        public List<Topic> GetTopicsByCategoryId(int categoryId)
+        public List<Topic> GetTopicsByCategoryId(TopicCategory topicCategory)
         {
-            return _dbContext.Topics.Where(category => category.CategoryId == categoryId).ToList();
+            return _dbContext.Topics.Where(category => category.Category == topicCategory).ToList();
         }
     }
 }

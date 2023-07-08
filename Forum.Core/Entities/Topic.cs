@@ -1,4 +1,4 @@
-﻿namespace Forum.Models.Entities
+﻿namespace Forum.Core.Entities
 {
     public class Topic : BaseEntity
     {
@@ -6,8 +6,7 @@
         public string Content { get; set; }
         public DateTime CreatedAt { get; set; }
         public User Author { get; set; }
-        public int ReplyCount { get; set; }
-        public int CategoryId { get; set; }
+        public TopicCategory Category { get; set; }
         public List<TopicMessage> Messages { get; set; }
     }
 }

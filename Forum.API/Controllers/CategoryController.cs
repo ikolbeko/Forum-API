@@ -1,5 +1,5 @@
-﻿using Forum.Models.Entities;
-using Forum.Repository.Repositories;
+﻿using Forum.Core.Entities;
+using Forum.DAL.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Forum.API.Controllers

@@ -1,4 +1,4 @@
-﻿namespace Forum.Models.Entities
+﻿namespace Forum.Core.Entities
 {
     public class TopicCategory : BaseEntity
     {

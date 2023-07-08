@@ -1,6 +1,6 @@
-﻿using Forum.Models.Entities;
+﻿using Forum.Core.Entities;
 
-namespace Forum.Models.Interfaces
+namespace Forum.Core.Interfaces
 {
     public interface ITopicMessageRepository : IRepository<TopicMessage>
     {

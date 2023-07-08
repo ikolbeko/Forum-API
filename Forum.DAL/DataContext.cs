@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Forum.Models.Entities;
+﻿using Forum.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Forum.Repository
+namespace Forum.DAL
 {
-    public class DataContext : IdentityDbContext<User>
+    public class DataContext : DbContext
     {
         public DataContext(DbContextOptions<DataContext> options)
             : base(options)

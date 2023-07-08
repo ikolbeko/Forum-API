@@ -1,8 +1,8 @@
-﻿using Forum.Models.Entities;
-using Forum.Models.Interfaces;
+﻿using Forum.Core.Entities;
+using Forum.Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Forum.Repository.Repositories
+namespace Forum.DAL.Repositories
 {
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {

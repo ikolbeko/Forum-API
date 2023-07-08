@@ -1,7 +1,6 @@
-﻿using Forum.Models.Entities;
-using System.Linq.Expressions;
+﻿using Forum.Core.Entities;
 
-namespace Forum.Models.Interfaces
+namespace Forum.Core.Interfaces
 {
     public interface IRepository<T> where T : BaseEntity
     {

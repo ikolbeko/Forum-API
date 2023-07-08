@@ -1,7 +1,7 @@
-﻿using Forum.Models.Entities;
-using Forum.Models.Interfaces;
+﻿using Forum.Core.Entities;
+using Forum.Core.Interfaces;
 
-namespace Forum.Repository.Repositories
+namespace Forum.DAL.Repositories
 {
     public class TopicMessageRepository : Repository<TopicMessage>, ITopicMessageRepository
     {
